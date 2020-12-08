@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="32dp"
+        android:background="#F6F6F6"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="32dp"
+        android:orientation="horizontal"
+        android:background="#F6F6F6">
+
+        <TextView
+            android:id="@+id/reply_item_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="沐风:"
+            android:textColor="#626262"
+            android:textSize="14sp"
+            android:layout_marginTop="@dimen/dime_5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/time_item_content" />
+
+        <TextView
+            android:id="@+id/reply_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:ellipsize="end"
+            android:maxLines="10"
+            android:paddingLeft="4dp"
+            android:paddingRight="8dp"
+            android:text="世上本没有路，走的人多了，也就成了路"
+            android:textColor="#949494"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/reply_item_user"
+            app:layout_constraintTop_toTopOf="@+id/reply_item_user" />
+
+        <TextView
+            android:id="@+id/time_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+
+            android:textColor="#949494"
+            android:textSize="11dp"
+
+            app:layout_constraintStart_toStartOf="@+id/reply_item_user"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

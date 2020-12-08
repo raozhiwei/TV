@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#ada9aa</color>
+    <color name="white">#ede4e8</color>
+    <color name="title_text">#26A8EE</color>
+    <color name="colorTabLab" tools:ignore="ReferenceType">@drawable/textcolour</color>
+    <color name="colorTabLabnull" tools:ignore="ReferenceType">@drawable/text_null</color>
+    <color name="gray">#808080</color>
+    <color name="lightYellow">#FFFFF0</color>
+    <color name="lightCyan">#E1FFFF</color>
+    <color name="textCloroMode">#C41B1B1B</color>
+    <color name="textScore">#F7A142</color>
+    <color name="line_color">#666666</color>
+    <color name="color_00000000">#00000000</color>
+    <color name="color_E5E5E5">#E5E5E5</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorThemeBackground">#F8F8F8</color>
+    <color name="colorTextUserCommon">#EEEEEE</color>
+    <color name="colorls">#6EC5FF</color>
+    <color name="textcolorstate">#40313131</color>
+
+</resources>
+

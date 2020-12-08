@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--  设置首页选项卡的背景选中和被选中颜色  -->
+    <item android:drawable="@color/colorTabLab" android:state_selected="true" />
+    <item android:drawable="@color/colorTabLabnull" android:state_selected="false"/>
+</selector>

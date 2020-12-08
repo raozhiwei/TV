@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- state_selected为true是选中,add_managebg_down、add_managebg是图片放在drawable文件夹下-->
+    <!--
+    <item android:drawable="@drawable/add_managebg_down" android:state_selected="true"/>
+    <item android:drawable="@drawable/add_managebg" android:state_selected="false"/>
+    -->
+    <!-- state_pressed为true是按下，normal、pressed是颜色代码在value文件夹下的string.xml文件里添加-->
+    <item android:drawable="@color/title_text" android:state_pressed="true"
+        />
+    <item android:drawable="@color/color_00000000" android:state_pressed="false"/>
+
+</selector>

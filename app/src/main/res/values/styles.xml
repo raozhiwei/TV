@@ -1,0 +1,153 @@
+<resources>
+
+<!--    &lt;!&ndash; Base application theme. &ndash;&gt;
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+&lt;!&ndash;        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+        <item name="colorPrimary">#00000000</item>
+        <item name="colorPrimaryDark">#00000000</item>
+        <item name="colorAccent">@color/colorAccent</item>&ndash;&gt;
+    </style>
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        &lt;!&ndash; All customizations that are NOT specific to a particular API-level can go here. &ndash;&gt;
+        &lt;!&ndash; 隐藏状态栏 &ndash;&gt;
+        <item name="android:windowFullscreen">true</item>
+        &lt;!&ndash; 隐藏标题栏 &ndash;&gt;
+        <item name="android:windowNoTitle">true</item>
+    </style>-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色-->
+        <!--  <item name="android:statusBarColor">@android:color/background_dark</item>-->
+    </style>
+
+    <style name="BottomSheetStyle" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+<!--    <style name = "BaseTheme" parent = "Theme.AppCompat.Light.NoActionBar">
+        <item name = "colorPrimary" >@color/colorPrimary</item>
+        <item name = "colorPrimaryDark" >@color/colorPrimaryDark</item>
+    </style >-->
+    <!-- ******************公共字段：用于HttpUtil****************** -->
+    <string name="network_enable">当前网络未连接</string>
+    <string name="network_terrible">当前网络不佳，请检查您的网络设置。</string>
+    <string name="network_error">网络连接异常</string>
+    <string name="network_timeout">网络请求超时，请重试</string>
+    <string name="network_unavailable">网络连接不可用</string>
+
+
+
+
+
+
+
+
+    <!-- 设置首页底部按钮字体大小 -->
+    <style name="myNavigationDrawerStyle" >
+        <item name="android:textSize">12sp</item>
+        <item name="android:color">#8B9FFA</item>
+    </style>
+
+    <!-- 个人中心 -->
+    <string name="nav_login">点击头像登录</string>
+    <style name="PersonalMainLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">@drawable/background_corners</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">1dp</item>
+    </style>
+
+
+    <style name="FindBottomStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:background">@drawable/more_activity_item_selector_bottom_corners</item>
+    </style>
+
+
+    <!-- 用户修改-->
+    <style name="user_modif_LinearLayout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:background">#99000000</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="user_modif_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">30dp</item>
+
+    </style>
+
+    <style name="user_modif_edittext">
+        <item name="android:layout_width">247dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <!-- 用户登录 注册 -->
+    <style name="user_login_LinearLayout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">#99404348</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">30dp</item>
+    </style>
+      <style name="user_login_text">
+      <item name="android:layout_height">35dp</item>
+      <item name="android:layout_width">134dp</item>
+      <item name="android:text">用户登录</item>
+      <item name="android:textColor">#FFFFFF</item>
+      <item name="android:textSize">20dp</item>
+      <item name="android:gravity">center</item>
+      <item name="android:layout_gravity">center</item>
+      </style>
+
+
+
+
+
+    <!-- 里面的linearLayout -->
+    <style name="user_login_LinearLayout2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#99000000</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+    </style>
+    <style name="user_login_EditText">
+       <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">50dp</item>
+        <item name="android:layout_marginRight">50dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">#9F9FA0</item>
+        <item name="android:textColorHint">#9F9FA0</item>
+    </style>
+
+    <style name="user_login_View">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">40dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:background">#83738F</item>
+    </style>
+
+
+
+</resources>

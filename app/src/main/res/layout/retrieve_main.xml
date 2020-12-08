@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/beijing">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/user_registration"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/retrieve_return"
+            android:layout_width="@dimen/dime_30dp"
+            android:layout_height="@dimen/dime_30dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/left"
+            android:onClick="quitmoe"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="找回密码"
+            android:textColor="#EEEEEE"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="600dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_registration">
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/view5"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/key" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/view8"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/password" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/view6"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/user" />
+
+        <EditText
+            android:id="@+id/user_name_zhmm"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="用户名"
+            android:inputType="textPersonName"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textColor="#EEEEEE"
+            android:textColorHint="#EEEEEE"
+            app:layout_constraintBottom_toTopOf="@+id/view6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView13" />
+
+        <ImageView
+            android:id="@+id/view6"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="15dp"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/Security_Question"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+
+        <ImageView
+            android:id="@+id/Security_Question_image"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/Security_Question_xhx"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/user" />
+
+        <EditText
+            android:id="@+id/Security_Question"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="密保问题"
+            android:inputType="textPersonName"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textColor="#EEEEEE"
+            android:textColorHint="#EEEEEE"
+            app:layout_constraintBottom_toTopOf="@+id/Security_Question_xhx"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/Security_Question_image" />
+
+        <ImageView
+            android:id="@+id/Security_Question_xhx"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="15dp"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/Secret_security"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <EditText
+            android:id="@+id/Secret_security"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="密保"
+            android:inputType="textPersonName"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textColor="#EEEEEE"
+            android:textColorHint="#EEEEEE"
+            app:layout_constraintBottom_toTopOf="@+id/view5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView12" />
+
+        <EditText
+            android:id="@+id/user_password_zhmm"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="设置新密码6-15位"
+            android:inputType="textPassword"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textColor="#EEEEEE"
+            android:textColorHint="#EEEEEE"
+            app:layout_constraintBottom_toTopOf="@+id/view8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView15" />
+
+        <ImageView
+            android:id="@+id/view5"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/user_password_zhmm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/view8"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/zhmm_code"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/view9"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/verification_code" />
+
+        <EditText
+            android:id="@+id/zhmm_code"
+            android:layout_width="140dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="4dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="验证码"
+            android:inputType="textPassword"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textColor="#EEEEEE"
+            android:textColorHint="#EEEEEE"
+            app:layout_constraintBottom_toTopOf="@+id/view9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView16" />
+
+        <ImageView
+            android:id="@+id/zhmm_verification_code"
+            android:layout_width="135dp"
+            android:layout_height="32dp"
+            app:layout_constraintBottom_toBottomOf="@+id/zhmm_code"
+            app:layout_constraintEnd_toEndOf="@+id/view9"
+            app:layout_constraintStart_toEndOf="@+id/zhmm_code"
+            app:layout_constraintTop_toTopOf="@+id/zhmm_code" />
+
+        <ImageView
+            android:id="@+id/view9"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/guideline8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="请填写以下信息"
+            android:textColor="#EEEEEE"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.64" />
+
+        <Button
+            android:id="@+id/zhmm_button"
+            android:layout_width="247dp"
+            android:layout_height="44dp"
+            android:background="@drawable/cornelogin"
+            android:text="确定"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view8" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

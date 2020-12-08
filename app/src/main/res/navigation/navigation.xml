@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment_Main">
+
+    <fragment
+        android:id="@+id/homeFragment_Main"
+        android:name="cn.wappt.m.apptv.views.home.HomeFragment"
+        android:label="首页"
+        tools:layout="@layout/home_fragment" />
+    <fragment
+        android:id="@+id/columnFragment_Main"
+        android:name="cn.wappt.m.apptv.views.home.ColumnFragment"
+        android:label="排行榜"
+        tools:layout="@layout/column_fragment" />
+    <fragment
+        android:id="@+id/MyFragment_Main"
+        android:name="cn.wappt.m.apptv.views.home.MyFragment"
+        android:label="我的"
+        tools:layout="@layout/personalcenter_main" />
+</navigation>

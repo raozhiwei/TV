@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/beijing"
+  >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/user_amend"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titleHeight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/quit_amend"
+            android:layout_width="@dimen/dime_30dp"
+            android:layout_height="@dimen/dime_30dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_amend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户信息修改"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/titleTextSize"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_user_amend"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_amend"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/view4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/password" />
+
+
+        <ImageView
+            android:id="@+id/imageView12s"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/key"
+            app:layout_constraintBottom_toTopOf="@+id/view5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/key"
+            app:layout_constraintBottom_toTopOf="@+id/view5s"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/password"
+            app:layout_constraintBottom_toTopOf="@+id/view8"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/password"
+            app:layout_constraintBottom_toTopOf="@+id/view4"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="27dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/password"
+            app:layout_constraintBottom_toTopOf="@+id/view11"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/qq"
+            app:layout_constraintBottom_toTopOf="@+id/view12"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="40dp"
+            android:background="@drawable/user"
+            app:layout_constraintBottom_toBottomOf="@+id/edit_username_amend"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/edit_username_amend"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="用户名"
+            android:inputType="textPersonName"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textColor="#EEEEEE"
+            android:textColorHint="#EEEEEE"
+            app:layout_constraintBottom_toTopOf="@+id/view6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView13" />
+
+        <ImageView
+            android:id="@+id/view6"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/edit_user_amendwt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/edit_user_amendwt"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="密保问题"
+            android:inputType="textPersonName"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textColor="#EEEEEE"
+            android:textColorHint="#EEEEEE"
+            app:layout_constraintBottom_toTopOf="@+id/view5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView12" />
+
+        <EditText
+            android:id="@+id/edit_user_amend"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="密保"
+            android:inputType="textPersonName"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textColor="#EEEEEE"
+            android:textColorHint="#EEEEEE"
+            app:layout_constraintBottom_toTopOf="@+id/view5s"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView12" />
+
+        <EditText
+            android:id="@+id/edit_password_u1"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="原始密码"
+            android:inputType="textPassword"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textColor="#EEEEEE"
+            android:textColorHint="#EEEEEE"
+            app:layout_constraintBottom_toTopOf="@+id/view8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView15" />
+
+        <EditText
+            android:id="@+id/edit_password_u2"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="新密码"
+            android:inputType="textPassword"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textColor="#EEEEEE"
+            android:textColorHint="#EEEEEE"
+            app:layout_constraintBottom_toTopOf="@+id/view4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView14" />
+
+        <EditText
+            android:id="@+id/edit_password_u3"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="确认新密码"
+            android:inputType="textPassword"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textColor="#EEEEEE"
+            android:textColorHint="#EEEEEE"
+            app:layout_constraintBottom_toTopOf="@+id/view11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView18" />
+
+        <EditText
+            android:id="@+id/edit_password_u4"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginBottom="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="QQ号"
+            android:inputType="textPersonName"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textColor="#EEEEEE"
+            android:textColorHint="#EEEEEE"
+            app:layout_constraintBottom_toTopOf="@+id/view12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView19" />
+
+        <ImageView
+            android:id="@+id/view5"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/edit_user_amend"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/view5s"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/edit_password_u1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/view8"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/edit_password_u2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/view4"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/edit_password_u3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/view11"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="16dp"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/edit_password_u4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/view12"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="24dp"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toTopOf="@+id/guideline8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.7" />
+
+        <Button
+            android:id="@+id/submit_u2"
+            android:layout_width="247dp"
+            android:layout_height="44dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/cornelogin"
+            android:text="确定"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

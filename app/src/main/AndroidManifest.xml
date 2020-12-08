@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cn.wappt.m.apptv">
+
+    <!-- ======================授权访问网络（HttpUtil）========================== -->
+    <!-- 允许程序打开网络套接字 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 允许程序访问有关GSM网络信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许程序访问Wi-Fi网络状态信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--涉及SD卡读写权限：--><uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 允许一个程序访问精良位置(如GPS)  -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 访问电话状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--外部存储的写权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--外部存储的读权限-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- -->
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme"
+        android:requestLegacyExternalStorage="true">
+        <activity android:name=".Activitv_Home" ></activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".views.user.RetrieveActivty"/>
+        <activity android:name=".views.user.ModifyUserActicty"/>
+        <activity android:name=".views.user.RegisterActivty"/>
+        <activity android:name=".views.user.LoginActivty"/>
+        <activity android:name=".views.user.profieActivty"/>
+        <activity android:name=".views.details.Videodetails"    android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".views.details.LocalM3u8"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait">
+            <intent-filter tools:ignore="AppLinkUrlError">
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".views.agreement.PrivacyPolicy"/>
+        <activity android:name=".views.details.VideoDownloadListActivity"/>
+        <activity android:name=".views.classification.ClassificationActivty"/>
+        <activity android:name=".views.search.SearchActivity"/>
+        <activity android:name=".views.search.SearchForDetails"/>
+        <activity android:name=".views.watch.MyWatchActivity"/>
+        <activity android:name=".views.recommend.FeaturedActivty"/>
+        <activity android:name=".views.user.SetUi_Main"/>
+        <activity android:name=".views.user.Leave"/>
+
+        <service android:name=".service.DownVideoService"
+            android:enabled="true"
+            android:exported="true"/>
+    </application>
+
+</manifest>
